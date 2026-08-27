@@ -1,11 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>IsHub Frontend 2nd Project</h1>
+    <br /><br /><br />
+    <h2>Task1</h2>
+    <hr style="width: 60px" />
+    <br />
+    <p id="myPara">This is First Text</p>
+    <button onclick="TextChanger()">ChangeText</button>
+    <button onclick="ColorChanger()">ChangeText</button>
+    <br /><br /><br /><br />
+    <!-- Default image -->
+
+    <h2>Task2</h2>
+    <hr style="width: 60px" />
+    <img
+      src="./images/default.webp"
+      id="mainImg"
+      width="150px"
+      alt="default image"
+    />
+    <!-- Thumbnails -->
+    <div class="thumbnails-container">
+      <img
+        src="./images/thumb1.webp"
+        class="thumb"
+        onclick="ImageChanger('thumb1.webp')"
+        width="150px"
+        alt=""
+      />
+      <img
+        src="./images/thumb2.webp"
+        class="thumb"
+        onclick="ImageChanger('thumb2.webp')"
+        width="150px"
+        alt=""
+      />
+      <img
+        src="./images/thumb3.webp"
+        class="thumb"
+        onclick="ImageChanger('thumb3.webp')"
+        width="150px"
+        alt=""
+      />
+    </div>
+    <br /><br />
+    <h2>Task3</h2>
+    <hr style="width: 60px" />
+    <ul>
+      <li class="done" onclick="toggleDone(this)">Try this one</li>
+      <li class="done" onclick="toggleDone(this)">the second One</li>
+      <li class="done" onclick="toggleDone(this)">Task three</li>
+    </ul>
+    <br /><br />
+    <h2>Task4</h2>
+    <hr style="width: 60px" />
+    <div class="counter-container">
+      <h2 id="countDisplay">0</h2>
+      <button onclick="increment()">+</button>
+      <button onclick="decrement()">-</button>
+    </div>
+    <br /><br />
+    <h2>Task5</h2>
+    <hr style="width: 60px" />
+    <ul>
+      <li onclick="logNextSibling(this)">Apple</li>
+      <li onclick="logNextSibling(this)">Banana</li>
+      <li onclick="logNextSibling(this)">Orange</li>
+    </ul>
+
+    <script src="./index.js"></script>
+  </body>
 </html>

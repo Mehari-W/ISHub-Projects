@@ -1,0 +1,118 @@
+/* Design Tokens */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #f0f3f8;
+  background: #0f1117;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+/* Headings */
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+}
+p {
+  font-size: 30px;
+  font-weight: bolder;
+}
+/* Buttons */
+button {
+  background: #0501e4;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5px;
+}
+/* Image Gallery */
+#mainImg {
+  display: block;
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.thumbnails-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+img.thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+img.thumb:hover {
+  transform: translateY(-4px);
+}
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  width: 75%;
+  max-width: 500px;
+}
+
+li {
+  background: #0f1117;
+  border: 1px solid #2a2d3a;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #1a1d27;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+li.done {
+  text-decoration: line-through;
+  color: #9aa3b2;
+  opacity: 0.7;
+  border-bottom: 1px solid #f10808;
+}
+
+/* Counter Container */
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+#countDisplay {
+  font-size: 4rem;
+  font-weight: 600;
+  background: #0501e4;
+  border-radius: 10px;
+  color: white;
+  min-width: 120px;
+  text-align: center;
+  padding: 5px 15px;
+  margin: 0;
+}
